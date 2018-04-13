@@ -31,7 +31,7 @@ class TestDemo(unittest.TestCase):
 
     def setUp(self):
         #self.driver = webdriver.Ie(executable_path = "e:\\IEDriverServer")
-        self.driver = webdriver.Firefox(executable_path="e:\\geckodriver")
+        self.driver = webdriver.Firefox(executable_path="geckodriver")
 
     @ddt.data(*excel.getDatasFromSheet()) #解包，
     def test_dataDrivenByFile(self, data):
